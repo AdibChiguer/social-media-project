@@ -1,0 +1,57 @@
+.newPost{
+    width: 95%;
+    margin: 2rem auto;
+    margin-top: 5.5rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 4px 9px 4px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 1.5rem;
+}
+.newPost .imgU-body{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+.newPost .imgU-body img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.newPost .imgU-body input{
+    width: 100%;
+    height: 50px;
+    padding: 1rem;
+    border-radius: 10px;
+    border: solid 1px #4b7fd3;
+    outline: none;
+}
+.newPost .imgU-body input::placeholder{
+    color: #4b7fd3;
+    font-weight: 600;
+}
+.newPost .post-Img  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.newPost .post-Img .input{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.newPost .post-Img .input #new-post-label i ,.Edite-Content-Box .photo-content-box label i{
+    font-size: 30px;
+    padding-left: 1.5rem;
+}
+.newPost .post-Img .btn button , .Edite-Content-Box button{
+    border: none;
+    padding: 1rem;
+    border-radius: 10px;
+    background: linear-gradient(9deg, rgba(103,167,251,1) 31%, rgba(82,151,235,1) 79%);
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+}

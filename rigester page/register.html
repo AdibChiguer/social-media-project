@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>register</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- //font awesome// -->
+    <!-- axios -->
+    <script src="../node_modules/axios/dist/axios.js"></script>
+    <!-- /axios/ -->
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <h1>register</h1>
+            <label for="img" class="photoBox">
+                <label for="img" class="userPhoto">
+                    <i class="fa-solid fa-camera"></i>
+                </label>
+                <input type="file" id="img" style="display: none;">
+            </label>
+            <div id="err"></div>
+            <input type="text" id="name" placeholder="name">
+            <input type="text" id="username" placeholder="user name">
+            <input type="password" id="password" placeholder="password">
+            <input type="submit" id="btn" onclick="registerNewUser()" value="sign in">
+        </div>
+    </div>
+
+    <!-- javaScript -->
+    <script src="register.js"></script>
+    <!-- //javaScript// -->
+</body>
+</html>

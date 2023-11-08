@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&family=Kanit:wght@200;300;400;500;600;700;800;900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <!-- //google font// -->
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- //font awesome// -->
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../sharedStyle/sharedStyle.css">
+    <!-- //CSS// -->
+    <!-- javaScript -->
+    <script src="../node_modules/axios/dist/axios.min.js"></script>
+    <!-- //javaScript// -->
+    <title>profile</title>
+</head>
+<body>
+    <div class="container">
+        <!-- head -->
+        <div class="head">
+            <div class="logo">
+                <h2 id="adib">adib</h2>
+            </div>
+            <div class="links">
+                <ul>
+                    <li class="homeLink"><i class="fa-sharp fa-solid fa-house"></i> home</li>
+                    <li class="profileLink"><i class="fa-solid fa-user"></i> profile</li>
+                </ul>
+                <div class="info-btn">
+                    <button class="login-btn" onclick="goLogin()"><span>login</span></button>
+                    <button class="register-btn" onclick="goRegister()"><span>register</span></button>
+                    <button class="logout-btn" style="display: none; cursor: pointer;" onclick="logOut()"><span>logout</span></button>
+                </div>
+            </div>
+            <div class="menu haden">
+                <i class="fa-sharp fa-solid fa-bars" onclick="showMenu()"></i>
+            </div>
+        </div>
+        <!-- //head// -->
+
+        <!-- side menu -->
+        <div class="side-menu">
+            <div class="logo">
+                <h3>adib</h3>
+                <i class="fa-solid fa-xmark" style="cursor: pointer;" onclick="hadeMenu()"></i>
+            </div>
+            <div class="info">
+                <p class="homeLink"><i class="fa-sharp fa-solid fa-house"></i> home</p>
+                <p class="profileLink"><i class="fa-solid fa-user"></i> profile</p>
+                <div class="btns">
+                    <button class="login-btn" onclick="goLogin()"><span>login</span></button>
+                    <button class="register-btn" onclick="goRegister()"><span>register</span></button>
+                    <button class="logout-btn" style="display: none;" onclick="logOut()"><span>logout</span></button>
+                </div>
+            </div>
+        </div>
+        <!-- //side menu// -->
+
+        <!-- user profile info -->
+        <div class="user-profile-content">
+        </div>
+        <!-- /user profile info/ -->
+        
+        <div class="user-post">
+            <!-- user posts -->
+            <!-- /user posts/ -->
+        </div>
+
+        <!-- comments box -->
+        <div id="p-comment" style="display: none;"></div>
+        <!-- /comments box/ -->
+
+        <!-- edite box -->
+        <div id="p-edite" style="display: none;"></div>
+        <!-- /edite box/ -->
+
+        <!-- delete msg -->
+        <div class="deleteConfirmeMsg">
+            <p>Delete successful</p>
+        </div>
+        <!-- /delete msg/ -->
+
+        <div class="user-info-edite" style="display: none;">
+            <div class="cl-btn">
+                <i class="fa-solid fa-xmark" style="cursor: pointer;" onclick="closeEditeUserInfoBox()"></i>
+            </div>
+            <div class="user-edite-info-container">
+                <h2>Edite your information</h2>
+                <div class="inputs">
+                    <input type="text" id="username-input-edite" placeholder="your new username">
+                    <input type="password" id="password-input-edite" placeholder="your new password">
+                </div>
+                <div class="EditeError"></div>
+                <div class="save-btn">
+                    <button onclick="EditeUserInfo()">save</button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="loader" style="background-color: rgba(128, 128, 128, 0.488); position: fixed; inset: 0 ; margin: auto auto; display: flex; align-items: center; justify-content: center; width: 100px; height: 100px; z-index: 100; border-radius: 20px;">
+        <div class="lds-facebook">
+            <div></div><div></div><div></div>
+        </div>
+    </div>
+    
+    <!-- javaScript -->
+    <script src="profile.js"></script>
+    <script src="../sharedJavaScript/sharesScript.js"></script>
+    <script src="../sharedJavaScript/Api.js"></script>
+    <!-- //javaScript// -->
+</body>
+</html>

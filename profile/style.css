@@ -1,0 +1,191 @@
+.user-profile-content{
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 4px 9px 4px;
+    background-color: rgba(151, 151, 151, 0.501);
+    width: 95%;
+    margin: 0 auto;
+    height: 300px;
+    margin-top: 5rem;
+    display: flex;
+    align-items: flex-end;
+    border-radius: 5px;
+}
+.user-box-profile{
+    background-color: #fff;
+    height: 80%;
+    width: 100%;
+    padding: 0 1rem;
+}
+.user-box-profile .user-presonal-info{
+    display: flex;
+}
+.user-box-profile .user-presonal-info .user-img{
+    width: 120px;
+    height: 120px;
+    margin-top: -20px;
+}
+.user-box-profile .user-presonal-info .user-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.user-box-profile .user-name{
+    width: calc(100% - 90px - 2rem);
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 3rem;
+}
+.user-box-profile .user-name h2{
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1.3px;
+}
+.user-box-profile .user-name h2 span{
+    text-transform: lowercase;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 0 1rem;
+}
+.user-box-profile .user-name h2 i{
+    font-size: 20px;
+    cursor : pointer;
+}
+.user-more-info{
+    width: 100%;
+    display: flex;
+    height: calc(100% - 120px);
+}
+.user-more-info .user-posts-info{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    gap: 3rem;
+}
+.user-more-info .user-posts-info h2{
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1.3px;
+}
+.user-more-info .user-posts-info h2 span{
+    padding: 0 0.5rem;
+    font-size: 60px;
+    font-weight: 300;
+}
+.user-post .user-post-box{
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding-bottom: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 4px 9px 4px;
+    margin-bottom: 2rem;
+}
+/* edite info */
+.user-info-edite{
+    width: 100%;
+    position: fixed;
+    inset: 0;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: grid;
+    place-items: center;
+}
+.user-info-edite .user-edite-info-container{
+    background-color: #f1f0f0;
+    width: 400px;
+    height: 400px;
+    padding: 1rem;
+    position: relative;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.user-edite-info-container .inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+}
+.user-edite-info-container .inputs input{
+    width: 90%;
+    padding: 16px;
+    border: 1px solid #67a7fb;
+    border-radius: 20px;
+    outline: none;
+    background-color: transparent;
+}
+.user-edite-info-container .inputs input::placeholder{
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    color: #444;
+    font-weight: 600;
+}
+.user-info-edite .save-btn{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.user-info-edite .save-btn button{
+    width: 80%;
+    padding: 1rem 0;
+    border: none;
+    padding: 1rem;
+    border-radius: 10px;
+    background: linear-gradient(9deg, #67a7fb 31%, rgba(82,151,235,1) 79%);
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+/* /edite info/ */
+@media only screen and (max-width: 600px){
+    .user-profile-content{
+        width: 100%;
+        height: 500px; /* rechanging this */
+    }
+    .user-box-profile .user-presonal-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .user-box-profile .user-presonal-info .user-img{
+        margin-top: -30px;
+    }
+    .user-box-profile .user-name{
+        width: 100%;
+        padding-left: 0rem;
+        margin-top: 1rem;
+    }
+    .user-more-info{
+        width: 100%;
+        display: flex;
+    }
+    .user-more-info .user-posts-info{
+        width: 100%;
+        height: 150px;
+        display: flex;
+        padding: 1rem 0;
+        gap: 1rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .user-more-info .user-posts-info h2{
+        text-transform: uppercase;
+        font-weight: 300;
+        letter-spacing: 1.3px;
+    }
+    .user-more-info .user-posts-info h2 span{
+        padding: 0 0.3rem;
+        font-size: 40px;
+        font-weight: 200;
+    }
+    .user-info-edite .user-edite-info-container{
+        width: 100%;
+    }
+}
